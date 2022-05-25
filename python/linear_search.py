@@ -10,3 +10,13 @@ def linear_search(value_to_find, array_to_search_through):
             return i
 
     return None
+
+def global_linear_search(value_to_find, array_to_search_through):
+    ans = []
+    for i,x in enumerate(array_to_search_through):
+        if value_to_find == x:
+            ans.append(i)
+    if not ans:
+        return 'None'
+    
+    return ans
